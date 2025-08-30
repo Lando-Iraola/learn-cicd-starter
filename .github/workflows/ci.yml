@@ -1,7 +1,7 @@
 name: ci
 on:
     pull_request:
-        brances: [main]
+        branches: [main]
 jobs:
     tests:
         name: Tests
@@ -17,7 +17,7 @@ jobs:
               run: go test ./... -cover
     style:
         name: Style
-        runs-on: ubuntu-latests
+        runs-on: ubuntu-latest
         steps:
             - name: check out code
               uses: actions/checkout@v4
